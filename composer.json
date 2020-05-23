@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Hungpt\\PHPCodeChecker\\": "src/"
+            "Hungpt\\PreCommitHook\\": "src/"
         }
     },
     "require": {

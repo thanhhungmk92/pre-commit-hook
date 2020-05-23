@@ -9,15 +9,15 @@ Inspired by [Enforce code standards with composer, git hooks, and phpcs](http://
 
 ## Installation
 
-Install `wickedreports/phpcs-pre-commit-hook` with composer require command:
+Install `hungpt/pre-commit-hook` with composer require command:
 
-    composer require "wickedreports/phpcs-pre-commit-hook"
+    composer require "hungpt/pre-commit-hook"
 
-Or alternatively, include a dependency for `wickedreports/phpcs-pre-commit-hook` in your composer.json file manually:
+Or alternatively, include a dependency for `hungpt/pre-commit-hook` in your composer.json file manually:
 
     {
         "require-dev": {
-            "wickedreports/phpcs-pre-commit-hook": "*"
+            "hungpt/pre-commit-hook": "*"
         }
     }
 
@@ -25,10 +25,10 @@ To enable code sniff, аdd to `post-install-cmd` and `post-update-cmd` in `compo
 
     "scripts": {
         "post-install-cmd": [
-            "PHPCodeChecker\\Installer::postInstall"
+            "Hungpt\\PreCommitHook\\Installer::postInstall"
         ],
         "post-update-cmd": [
-            "PHPCodeChecker\\Installer::postInstall"
+            "Hungpt\\PreCommitHook\\Installer::postInstall"
         ]
     }
 
